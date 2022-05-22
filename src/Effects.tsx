@@ -2,7 +2,7 @@ import { subscribe, unsubscribe } from './resources/API';
 import { useState, useEffect } from 'react';
 
 export function Effects(props: { sourceId: string; payload: number }) {
-    const [mess, setMess] = useState(1);
+    const [mess, setMess] = useState(-1);
     const callback = (payload: number) => {
         setMess(payload);
     };
